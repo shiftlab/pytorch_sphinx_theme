@@ -128,7 +128,7 @@ article.pytorch-article {
         padding-right: 15px;
       }
     }
-    p {
+    p:nth-child(n+2) {
       padding: 0 rem(32px);
       font-size: rem(18px);
       color: $not_quite_black;
@@ -174,7 +174,7 @@ article.pytorch-article {
 
   p.last {
     margin-bottom: 0;
-    padding-bottom: rem(18px);
+    padding-bottom: rem(18px) !important;
   }
 }
 
