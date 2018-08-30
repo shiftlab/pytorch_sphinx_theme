@@ -9357,8 +9357,8 @@ article.pytorch-article p.caption {
   padding-left: 10px;
   padding-right: 15px;
 }
-.note .last,
-.warning .last {
+.note p:nth-child(n + 2),
+.warning p:nth-child(n + 2) {
   padding-left: 32px;
   padding-right: 32px;
   font-size: 1.125rem;
