@@ -9447,7 +9447,7 @@ article.pytorch-article p.last {
   }
 }
 
-.function dt, .attribute dt, .class dt {
+.function dt, .attribute dt, .class .attribute dt, .class dt {
   position: relative;
   background: #f3f4f7;
   padding: 1.125rem;
@@ -9463,7 +9463,7 @@ article.pytorch-article p.last {
   left: 100%;
   font-size: 1.5625rem !important;
 }
-.function code, .attribute code, .class code {
+.function code, .attribute code, .class .attribute code, .class code {
   color: #262626;
 }
 .function .viewcode-link, .attribute .viewcode-link, .class .viewcode-link {
@@ -9526,11 +9526,7 @@ article.pytorch-article p.last {
   color: #8c8c8c;
   font-weight: 300;
 }
-.pytorch-article div.sphx-glr-download a code,
-.pytorch-article div.sphx-glr-download a kbd,
-.pytorch-article div.sphx-glr-download a pre,
-.pytorch-article div.sphx-glr-download a samp,
-.pytorch-article div.sphx-glr-download a span.pre {
+.pytorch-article div.sphx-glr-download a code, .pytorch-article div.sphx-glr-download a kbd, .pytorch-article div.sphx-glr-download a pre, .pytorch-article div.sphx-glr-download a samp, .pytorch-article div.sphx-glr-download a span.pre {
   font-family: FreightSans, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
@@ -9556,6 +9552,14 @@ article.pytorch-article p.last {
   color: #8c8c8c;
   letter-spacing: 0;
   line-height: 28px;
+}
+.class .method dt,
+.class .staticmethod dt {
+  border-left: 3px solid #e44c2c;
+  border-top: none;
+}
+.class .attribute dt {
+  border-top: none;
 }
 
 .pytorch-article p.sphx-glr-script-out {

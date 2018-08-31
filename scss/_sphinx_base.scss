@@ -286,11 +286,7 @@ article.pytorch-article {
       font-weight: 300;
     }
 
-    code,
-    kbd,
-    pre,
-    samp,
-    span.pre {
+    code, kbd, pre, samp, span.pre {
       font-family: FreightSans, Helvetica Neue, Helvetica, Arial, sans-serif;
     }
   }
@@ -302,7 +298,6 @@ article.pytorch-article {
     float: none;
   }
 }
-
 
 .class {
   @extend .function;
@@ -343,7 +338,6 @@ article.pytorch-article {
     }
   }
 }
-
 
 .pytorch-article p.sphx-glr-script-out {
   margin-bottom: rem(18px);
