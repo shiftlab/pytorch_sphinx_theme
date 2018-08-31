@@ -398,6 +398,7 @@ article.pytorch-article {
     table {
       border: none;
       border-color: $white !important;
+      table-layout: fixed;
       thead {
         border-bottom: 2px solid $quick_start_grey;
         th {
@@ -413,19 +414,18 @@ article.pytorch-article {
         }
         td {
           color: $quick_start_grey;
-          white-space: nowrap;
-          padding-left: rem(15px);
-          padding-right: rem(15px);
+          white-space: normal;
+          padding: rem(15px);
+          font-size: rem(16px);
+          line-height: rem(22px);
           .pre {
             background: $white;
             outline: 1px solid #e9e9e9;
             color: $red_orange;
+            font-size: 87.5%;
           }
-          code:first-child {
-            padding-right: rem(8px);
-          }
-          code:nth-child(2) {
-            padding-left: rem(8px);
+          code {
+            font-size: 87.5%;
           }
         }
       }
