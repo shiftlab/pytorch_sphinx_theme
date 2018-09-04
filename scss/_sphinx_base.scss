@@ -490,3 +490,13 @@ a[rel~="prev"], a[rel~="next"] {
     box-shadow: none;
   }
 }
+
+article.pytorch-article {
+  blockquote {
+    margin-left: rem(60px);
+    p, .attribution, .line {
+      color: $quick_start_grey;
+      line-height: rem(28px);
+    }
+  }
+}
