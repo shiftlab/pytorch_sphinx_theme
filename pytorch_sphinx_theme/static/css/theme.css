@@ -9668,9 +9668,9 @@ a[rel~="prev"], a[rel~="next"] {
 
 article.pytorch-article blockquote {
   margin-left: 3.75rem;
+  color: #8c8c8c;
 }
 article.pytorch-article blockquote p, article.pytorch-article blockquote .attribution, article.pytorch-article blockquote .line {
-  color: #8c8c8c;
   line-height: 1.75rem;
 }
 

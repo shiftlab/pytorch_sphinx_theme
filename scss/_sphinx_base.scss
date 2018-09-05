@@ -494,8 +494,8 @@ a[rel~="prev"], a[rel~="next"] {
 article.pytorch-article {
   blockquote {
     margin-left: rem(60px);
+    color: $quick_start_grey;
     p, .attribution, .line {
-      color: $quick_start_grey;
       line-height: rem(28px);
     }
   }
