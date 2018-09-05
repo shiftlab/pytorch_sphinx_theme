@@ -10354,6 +10354,16 @@ article.pytorch-article .note .highlight,
 article.pytorch-article .warning .highlight {
   margin: 0 2rem 1.125rem 2rem;
 }
+article.pytorch-article .note ul,
+article.pytorch-article .note ol,
+article.pytorch-article .warning ul,
+article.pytorch-article .warning ol {
+  padding-left: 3.25rem;
+}
+article.pytorch-article .note p,
+article.pytorch-article .warning p {
+  margin-top: 1.125rem;
+}
 article.pytorch-article .note .admonition-title {
   background: #ee4c2c;
 }
@@ -10435,7 +10445,8 @@ article.pytorch-article .function dt a, article.pytorch-article .attribute dt a,
   right: 30px;
   padding-right: 0;
   top: 50%;
-  transform: perspective(1px) translateY(-50%);
+  -webkit-transform: perspective(1px) translateY(-50%);
+          transform: perspective(1px) translateY(-50%);
 }
 article.pytorch-article .function dt:hover .viewcode-link, article.pytorch-article .attribute dt:hover .viewcode-link, article.pytorch-article .class dt:hover .viewcode-link {
   color: #e44c2c;
@@ -10489,14 +10500,6 @@ article.pytorch-article .attribute .has-code {
 article.pytorch-article .class dt {
   border-left: none;
   border-top: 3px solid #e44c2c;
-}
-article.pytorch-article .class dt:after {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 100%;
-  right: -50px;
-  top: 0;
 }
 article.pytorch-article .class em.property {
   text-transform: uppercase;
