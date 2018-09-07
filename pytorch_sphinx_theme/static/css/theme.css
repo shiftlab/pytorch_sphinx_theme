@@ -10403,17 +10403,15 @@ article.pytorch-article p.last {
 }
 
 .sphx-glr-thumbcontainer {
+  margin: 0.9375rem !important;
   border: 1px solid #d6d7d8 !important;
   border-radius: 0 !important;
 }
 .sphx-glr-thumbcontainer .caption-text a {
   font-size: 1rem;
-  color: #8c8c8c;
+  color: #262626;
   letter-spacing: 0;
   line-height: 1.5rem;
-}
-.sphx-glr-thumbcontainer .caption-text a:hover {
-  color: #262626;
   text-decoration: none;
 }
 .sphx-glr-thumbcontainer:hover {
@@ -10424,6 +10422,9 @@ article.pytorch-article p.last {
 .sphx-glr-thumbcontainer:hover .figure:before {
   bottom: 100%;
 }
+.sphx-glr-thumbcontainer .figure {
+  width: 180px !important;
+}
 .sphx-glr-thumbcontainer .figure:before {
   content: "";
   display: block;
@@ -10432,7 +10433,8 @@ article.pytorch-article p.last {
   bottom: 35%;
   left: 0;
   right: 0;
-  background: rgba(151, 155, 151, 0.2);
+  background: #8A94B3;
+  opacity: 10;
 }
 @media screen and (min-width: 768px) {
   .sphx-glr-thumbcontainer:after {
@@ -11306,4 +11308,5 @@ article.pytorch-article .math .MathJax_Display {
     left: 820px;
   }
 }
+
 /*# sourceMappingURL=theme.css.map */

@@ -253,19 +253,17 @@ article.pytorch-article {
 }
 
 .sphx-glr-thumbcontainer {
+  margin: rem(15px) !important;
   border: 1px solid #d6d7d8 !important;
   -webkit-border-radius: 0 !important;
   border-radius: 0 !important;
   .caption-text {
     a {
       font-size: rem(16px);
-      color: $quick_start_grey;
+      color: $not_quite_black;
       letter-spacing: 0;
       line-height: rem(24px);
-      &:hover {
-        color: $not_quite_black;
-        text-decoration: none;
-      }
+      text-decoration: none;
     }
   }
   &:hover {
@@ -275,6 +273,9 @@ article.pytorch-article {
     box-shadow: none !important;
     border-bottom-color: $white !important;
   }
+  .figure {
+    width: 180px !important;
+  }
   .figure:before {
     content: "";
     display: block;
@@ -283,7 +284,8 @@ article.pytorch-article {
     bottom: 35%;
     left: 0;
     right: 0;
-    background: rgba(151, 155, 151, 0.2);
+    background: #8A94B3;
+    opacity: 10;
   }
   @include animated_border_hover_state;
 }
