@@ -252,11 +252,32 @@ article.pytorch-article {
   }
 }
 
-.sphx-glr-thumbcontainer {
-  margin: rem(15px) !important;
-  border: 1px solid #d6d7d8 !important;
-  -webkit-border-radius: 0 !important;
-  border-radius: 0 !important;
+article.pytorch-article .sphx-glr-thumbcontainer {
+  margin: 0;
+  border: 1px solid #d6d7d8 ;
+  border-radius: 0;
+  width: 45%;
+  text-align: center;
+  margin-bottom: 5%;
+
+  @media screen and (max-width: $sphinx_medium_width - 1px) {
+    &:nth-child(odd) {
+      margin-left: 0;
+      margin-right: 2.5%;
+    }
+
+    &:nth-child(even) {
+      margin-right: 0;
+      margin-left: 2.5%;
+    }
+  }
+
+  @include sphinx-medium-size {
+    margin-right: 3%;
+    margin-bottom: 3%;
+    width: 30%;
+  }
+
   .caption-text {
     a {
       font-size: rem(16px);
@@ -266,16 +287,20 @@ article.pytorch-article {
       text-decoration: none;
     }
   }
+
   &:hover {
     .figure:before {
       bottom: 100%;
     }
-    box-shadow: none !important;
-    border-bottom-color: $white !important;
+
+    box-shadow: none;
+    border-bottom-color: $white;
   }
+
   .figure {
-    width: 180px !important;
+    width: 80%;
   }
+
   .figure:before {
     content: "";
     display: block;
@@ -285,8 +310,13 @@ article.pytorch-article {
     left: 0;
     right: 0;
     background: #8A94B3;
-    opacity: 10;
+    opacity: 0.10;
   }
+
+  .figure a.reference.internal {
+    text-align: left;
+  }
+
   @include animated_border_hover_state;
 }
 
