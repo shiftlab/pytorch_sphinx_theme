@@ -10706,19 +10706,17 @@ a[rel~="prev"], a[rel~="next"] {
   padding: 0.375rem 0 0 0;
 }
 
-.next-page, .previous-page {
-  width: 0.5rem;
-  height: 0.625rem;
-  margin-bottom: 0.125rem;
-  margin-right: 0.125rem;
+img.next-page,
+img.previous-page {
+  width: 8px;
+  height: 10px;
   position: relative;
+  top: -1px;
 }
 
-.previous-page {
+img.previous-page {
   -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  margin-bottom: 0.1875rem;
-  margin-right: 0;
+          transform: scaleX(-1);
 }
 
 .rst-footer-buttons {
