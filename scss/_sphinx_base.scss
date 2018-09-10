@@ -138,6 +138,15 @@ span.pre {
   padding: 2px 6px;
 }
 
+pre {
+  background-color: $light_grey;
+  padding: rem(25px);
+}
+
+.highlight .c1 {
+  color: $quick_start_grey;
+}
+
 .headerlink {
   display: none !important;
 }
