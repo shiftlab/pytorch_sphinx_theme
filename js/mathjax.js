@@ -5,7 +5,9 @@ MathJax.Hub.Config({
         showMathMenu: false,
         linebreaks: { automatic: true, width: "container" } ,
         preferredFont: "STIX",
-        availableFonts: ["STIX","TeX"]
+        availableFonts: ["STIX","TeX"],
+        scale: 100,
+        minScaleAdjust: 100
     },
     SVG: { linebreaks: { automatic: true, width: "container" } }
  });
